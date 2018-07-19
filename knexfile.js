@@ -1,4 +1,5 @@
 const databaseName = 'harjoitus';
+const databaseNameTest = 'harjoitusTest';
 
 module.exports = {
   development: {
@@ -13,7 +14,7 @@ module.exports = {
   },
   test: {
     client: 'postgresql',
-    connection: `postgres://localhost:5432/${databaseName}_test`,
+    connection: `postgres://localhost:5432/${databaseNameTest}_test`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
